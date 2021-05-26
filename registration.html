@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <title>Registration Page</title>
+  </head>
+  <body class="container">
+    <h1 class="text-primary">Welcome To Capgemini</h1>
+    <h3>New Account Creation</h3>
+    <div style="width: 450px">
+      <form>
+        <div class="form-group">
+          <label>Username</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label>Confirm Password</label>
+          <input
+            id="cpassword"
+            name="cpassword"
+            type="password"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label>City</label>
+          <select id="city" name="city" class="form-control">
+            <option value="">--Select City--</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="vijayawada">Vijayawada</option>
+            <option value="vizag">Vizag</option>
+          </select>
+        </div>
+        <br />
+        <label>Gender</label>
+        <div class="form-check">
+          <input type="radio" name="gender" value="male" class="form-check-input" />Male
+        </div>
+        <div class="form-check">
+            <input type="radio" name="gender" value="female" class="form-check-input" />Female
+          </div>
+        <br />
+        <button class="btn btn-success">Register</button>
+        <b class="text-danger" id="error"></b>
+      </form>
+    </div>
+    <script src="myvalidation-2.js"></script>
+  </body>
+</html>
